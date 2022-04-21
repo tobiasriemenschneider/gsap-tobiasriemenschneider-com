@@ -1,14 +1,16 @@
-::-moz-selection {
-  background: yellow;
-  background: rgba(253, 255, 151, 0.8);
-}
-::selection {
-  background: yellow;
-  background: rgba(253, 255, 151, 0.8);
+html {
+  background-color: #262626;
 }
 
 body {
-  color: #404040;
+  color: white;
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: grayscale;
+}
+
+::-moz-selection {
+  background: #88ce02;
+}
+::selection {
+  background: #88ce02;
 }

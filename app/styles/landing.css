@@ -1,15 +1,13 @@
-html {
-  background-color: #262626;
-}
-
 .container {
   height: 90vh;
 
   display: flex;
   align-items: center;
   justify-content: center;
+}
 
-  @supports (-webkit-touch-callout: none) {
+@supports (-webkit-touch-callout: none) {
+  .container {
     height: -webkit-fill-available;
   }
 }
@@ -31,7 +29,6 @@ html {
 .prose {
   max-width: 450px;
   padding: 20px 10px 20px 50px;
-  color: white;
   font-family: "Fira Sans", "Helvetica Neue", "Segoe UI", "Helvetica", "Arial",
     sans-serif;
 }
@@ -49,15 +46,24 @@ html {
   color: white;
   text-decoration: none;
   border-bottom: 1px dotted white;
+  transition: all 0.2s ease;
+}
+
+.prose p a.breakAll {
+  word-break: break-all;
 }
 
 .prose p a:hover {
-  border-bottom-style: solid;
+  color: #88ce02;
+  border-bottom-color: #262626;
 }
 
 @media screen and (max-height: 500px) {
   .container {
     align-items: flex-start;
+  }
+  .prose {
+    padding-top: 30px;
   }
 }
 
