@@ -1,0 +1,14 @@
+::-moz-selection {
+  background: yellow;
+  background: rgba(253, 255, 151, 0.8);
+}
+::selection {
+  background: yellow;
+  background: rgba(253, 255, 151, 0.8);
+}
+
+body {
+  color: #404040;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: grayscale;
+}

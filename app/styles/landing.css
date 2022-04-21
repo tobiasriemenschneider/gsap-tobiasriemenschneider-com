@@ -1,0 +1,81 @@
+html {
+  background-color: #262626;
+}
+
+.container {
+  height: 90vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @supports (-webkit-touch-callout: none) {
+    height: -webkit-fill-available;
+  }
+}
+
+.container .inner {
+  max-width: 80%;
+  display: flex;
+}
+
+.logo {
+  padding: 20px;
+  padding-top: 40px;
+}
+
+.logo img {
+  width: 150px;
+}
+
+.prose {
+  max-width: 450px;
+  padding: 20px 10px 20px 50px;
+  color: white;
+  font-family: "Fira Sans", "Helvetica Neue", "Segoe UI", "Helvetica", "Arial",
+    sans-serif;
+}
+
+.prose h1 {
+  margin-top: 0;
+}
+
+.prose p {
+  line-height: 140%;
+  font-size: 1.1rem;
+}
+
+.prose p a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px dotted white;
+}
+
+.prose p a:hover {
+  border-bottom-style: solid;
+}
+
+@media screen and (max-height: 500px) {
+  .container {
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    align-items: flex-start;
+  }
+  .container .inner {
+    flex-direction: column;
+  }
+
+  .logo {
+    padding: 0px;
+    padding-top: 30px;
+  }
+
+  .prose {
+    max-width: auto;
+    padding: 40px 0px 10px 00px;
+  }
+}
